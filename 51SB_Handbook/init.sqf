@@ -4,7 +4,7 @@
 // Include BI DIK codes.
 #include "\a3\editor_f\Data\Scripts\dikCodes.h"
 
-call compile preprocessFile "\51sb_soi\functions\functions.sqf";
+call compile preprocessFile "\51SB_Handbooks\functions\functions.sqf";
 
 /////////////////////////////////////////////////////////////////////////////////
 
