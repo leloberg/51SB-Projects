@@ -39,7 +39,27 @@ class loberg_51sb_soi_picture
 };
 
 
-class loberg_51sb_soi
+class loberg_51sb_soi_page1to2
+{
+	idd = -1;
+	movingenable = "true";
+	onUnload = "hint """"";
+	class Controls
+	{
+		class loberg_51sb_soi_background: loberg_51sb_soi_picture
+		{
+			idc = 1200;
+			text = "\51SB_Handbook\data\images\soi51.paa";
+			x = "-0.0786458 * safezoneW + safezoneX";
+			y = "0.015807 * safezoneH + safezoneY";
+			w = "0.469219 * safezoneW";
+			h = "0.979 * safezoneH";
+			moving = 1;
+		};
+	};
+};
+
+class loberg_51sb_soi_page3to4
 {
 	idd = -1;
 	movingenable = "true";
