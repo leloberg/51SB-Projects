@@ -10,7 +10,7 @@ class CfgPatches {
 	};
 };
 
-#include "\51sb_soi\cfgfunctions.h"
+#include "\51SB_Handbook\cfgfunctions.h"
 
 class Extended_PostInit_EventHandlers {
 	class 51sb_Handbooks {
