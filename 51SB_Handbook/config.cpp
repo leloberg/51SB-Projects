@@ -14,7 +14,7 @@ class CfgPatches {
 
 class Extended_PostInit_EventHandlers {
 	class 51sb_soi {
-		clientInit = "call compile preProcessFileLineNumbers '\51sb_soi\init.sqf'";
+		clientInit = "call compile preProcessFileLineNumbers '\51SB_Handbook\init.sqf'";
 	};
 };
 
@@ -49,7 +49,7 @@ class loberg_51sb_soi
 		class loberg_51sb_soi_background: loberg_51sb_soi_picture
 		{
 			idc = 1200;
-			text = "\51sb_soi\data\images\soi51.paa";
+			text = "\51SB_Handbook\data\images\soi51.paa";
 			x = "-0.0786458 * safezoneW + safezoneX";
 			y = "0.015807 * safezoneH + safezoneY";
 			w = "0.469219 * safezoneW";
@@ -66,9 +66,8 @@ class CfgWeapons
 		displayname = "51SB SOI";
 		descriptionshort = "51SB SOI";
 		descriptionuse = "51SB SOI";
-		picture = "\51sb_soi\data\images\15th_rugged_tab_ico.paa";
+		picture = "\51SB_Handbook\data\images\15th_rugged_tab_ico.paa";
 		scope = 2;
-		simulation = "ItemGPS";
 		class ItemInfo
 		{
 			mass = 1;
