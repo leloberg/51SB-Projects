@@ -1,7 +1,7 @@
 class CfgPatches {
 	class 51sb_soi {
 		units[] = {};
-		weapons[] = {"ItemSOI"};
+		weapons[] = {"Item51SOI"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {CBA_XEH, CBA_MAIN, A3_UI_F};
 		version = 2.3;
@@ -10,11 +10,11 @@ class CfgPatches {
 	};
 };
 
-#include "\51sb_soi\cfgfunctions.h"
+#include "\51SB_Handbook\cfgfunctions.h"
 
 class Extended_PostInit_EventHandlers {
-	class 51sb_soi {
-		clientInit = "call compile preProcessFileLineNumbers '\51sb_soi\init.sqf'";
+	class 51sb_Handbooks {
+		clientInit = "call compile preProcessFileLineNumbers '\51SB_Handbook\init.sqf'";
 	};
 };
 
@@ -39,7 +39,7 @@ class loberg_51sb_soi_picture
 };
 
 
-class loberg_51sb_soi
+class loberg_51sb_soi_page1to2
 {
 	idd = -1;
 	movingenable = "true";
@@ -49,7 +49,27 @@ class loberg_51sb_soi
 		class loberg_51sb_soi_background: loberg_51sb_soi_picture
 		{
 			idc = 1200;
-			text = "\51sb_soi\data\images\soi51.paa";
+			text = "\51SB_Handbook\data\images\soi51.paa";
+			x = "-0.0786458 * safezoneW + safezoneX";
+			y = "0.015807 * safezoneH + safezoneY";
+			w = "0.469219 * safezoneW";
+			h = "0.979 * safezoneH";
+			moving = 1;
+		};
+	};
+};
+
+class loberg_51sb_soi_page3to4
+{
+	idd = -1;
+	movingenable = "true";
+	onUnload = "hint """"";
+	class Controls
+	{
+		class loberg_51sb_soi_background: loberg_51sb_soi_picture
+		{
+			idc = 1200;
+			text = "\51SB_Handbook\data\images\soi51.paa";
 			x = "-0.0786458 * safezoneW + safezoneX";
 			y = "0.015807 * safezoneH + safezoneY";
 			w = "0.469219 * safezoneW";
@@ -62,13 +82,12 @@ class loberg_51sb_soi
 class CfgWeapons
 {
 	class itemcore;
-	class item51soi: itemcore {
-		displayname = "51SB SOI";
-		descriptionshort = "51SB SOI";
-		descriptionuse = "51SB SOI";
-		picture = "\51sb_soi\data\images\15th_rugged_tab_ico.paa";
+	class item51SOI: itemcore {
+		displayname = "51SB Handbook SOI";
+		descriptionshort = "51SB Handbook - Signal Operating Instructions";
+		descriptionuse = "51SB Handbook - Signal Operating Instructions";
+		picture = "\51SB_Handbook\data\images\15th_rugged_tab_ico.paa";
 		scope = 2;
-		simulation = "ItemGPS";
 		class ItemInfo
 		{
 			mass = 1;

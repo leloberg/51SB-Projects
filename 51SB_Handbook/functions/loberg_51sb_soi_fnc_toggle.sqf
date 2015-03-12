@@ -1,6 +1,6 @@
 loberg_51sb_soi_fnc_toggle = 
 {
-	if !("item51soi" in items player)exitWith {hint "MISSING ITEM";};
+	if !("Item51SOI" in items player)exitWith {hint "MISSING ITEM";};
 	closeDialog 0;
-	createDialog "loberg_51sb_soi";
+	createDialog "loberg_51sb_soi_page1to2";
 };
