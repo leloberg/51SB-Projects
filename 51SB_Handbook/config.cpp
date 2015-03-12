@@ -1,7 +1,7 @@
 class CfgPatches {
 	class 51sb_soi {
 		units[] = {};
-		weapons[] = {"ItemSOI"};
+		weapons[] = {"Item51SOI"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {CBA_XEH, CBA_MAIN, A3_UI_F};
 		version = 2.3;
@@ -13,7 +13,7 @@ class CfgPatches {
 #include "\51sb_soi\cfgfunctions.h"
 
 class Extended_PostInit_EventHandlers {
-	class 51sb_soi {
+	class 51sb_Handbooks {
 		clientInit = "call compile preProcessFileLineNumbers '\51SB_Handbook\init.sqf'";
 	};
 };
@@ -62,10 +62,10 @@ class loberg_51sb_soi
 class CfgWeapons
 {
 	class itemcore;
-	class item51soi: itemcore {
-		displayname = "51SB SOI";
-		descriptionshort = "51SB SOI";
-		descriptionuse = "51SB SOI";
+	class item51SOI: itemcore {
+		displayname = "51SB Handbook SOI";
+		descriptionshort = "51SB Handbook - Signal Operating Instructions";
+		descriptionuse = "51SB Handbook - Signal Operating Instructions";
 		picture = "\51SB_Handbook\data\images\15th_rugged_tab_ico.paa";
 		scope = 2;
 		class ItemInfo
