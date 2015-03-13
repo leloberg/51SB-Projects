@@ -8,12 +8,10 @@ call compile preprocessFile "\51SB_Handbook\functions\functions.sqf";
 
 /////////////////////////////////////////////////////////////////////////////////
 
-// Read config file keys.
-[] call tao_foldmap_fnc_processKeyConfig;
 
 // Check if CBA Keybinding system is available.
 if (!isNil "cba_keybinding") then {
-	// Register CBA keybinds (defaults are read from config file).
+	// Register CBA keybinds
 	["51SB SOI", "Open 51SB Handbook SOI", {_this call loberg_51sb_soi_fnc_toggle}, [DIK_M,true,false,false]] call cba_fnc_registerKeybind;
 	["51SB SOI", "Next Page", {_this call loberg_51sb_soi_fnc_nextpage}, [DIK_M,true,false,false]] call cba_fnc_registerKeybind;
 } else {
