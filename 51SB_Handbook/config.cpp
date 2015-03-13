@@ -10,8 +10,6 @@ class CfgPatches {
 	};
 };
 
-#include "\51SB_Handbook\cfgfunctions.h"
-
 class Extended_PostInit_EventHandlers {
 	class 51sb_Handbooks {
 		clientInit = "call compile preProcessFileLineNumbers '\51SB_Handbook\init.sqf'";
@@ -46,10 +44,10 @@ class loberg_51sb_soi_page1to2
 	onUnload = "hint """"";
 	class Controls
 	{
-		class loberg_51sb_soi_background: loberg_51sb_soi_picture
+		class loberg_51sb_soi_background1to2: loberg_51sb_soi_picture
 		{
 			idc = 1200;
-			text = "\51SB_Handbook\data\images\soi51.paa";
+			text = "\51SB_Handbook\data\images\sig_book.paa";
 			x = "-0.0786458 * safezoneW + safezoneX";
 			y = "0.015807 * safezoneH + safezoneY";
 			w = "0.469219 * safezoneW";
@@ -66,10 +64,10 @@ class loberg_51sb_soi_page3to4
 	onUnload = "hint """"";
 	class Controls
 	{
-		class loberg_51sb_soi_background: loberg_51sb_soi_picture
+		class loberg_51sb_soi_background3to4: loberg_51sb_soi_picture
 		{
 			idc = 1200;
-			text = "\51SB_Handbook\data\images\soi51.paa";
+			text = "\51SB_Handbook\data\images\sig_book2.paa";
 			x = "-0.0786458 * safezoneW + safezoneX";
 			y = "0.015807 * safezoneH + safezoneY";
 			w = "0.469219 * safezoneW";
@@ -88,6 +86,7 @@ class CfgWeapons
 		descriptionuse = "51SB Handbook - Signal Operating Instructions";
 		picture = "\51SB_Handbook\data\images\15th_rugged_tab_ico.paa";
 		scope = 2;
+		simulation = "ItemGPS";
 		class ItemInfo
 		{
 			mass = 1;
