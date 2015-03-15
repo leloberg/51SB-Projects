@@ -36,6 +36,37 @@ class loberg_51sb_soi_picture
 	h = 0.15;
 };
 
+class loberg_hiddenbutton
+{
+	access = 0;
+	type = 1;
+	text = "";
+	colorText[] = {1,1,1,1};
+	colorDisabled[] = {0,0,0,0};
+	colorBackground[] = {0,0,0,0};
+	colorBackgroundDisabled[] = {0,0,0,0};
+	colorBackgroundActive[] = {0,0,0,0};
+	colorFocused[] = {0,0,0,0};
+	colorShadow[] = {0,0,0,0};
+	colorBorder[] = {0,0,0,0};
+	soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1};
+	soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1};
+	soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1};
+	soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1};
+	style = 2;
+	x = 0;
+	y = 0;
+	w = 0.095589;
+	h = 0.039216;
+	shadow = 0;
+	font = "puristaMedium";
+	sizeEx = 0.03921;
+	offsetX = 0.003;
+	offsetY = 0.003;
+	offsetPressedX = 0.002;
+	offsetPressedY = 0.002;
+	borderSize = 0;
+};
 
 class loberg_51sb_soi_page1to2
 {
@@ -48,11 +79,21 @@ class loberg_51sb_soi_page1to2
 		{
 			idc = 1200;
 			text = "\51SB_Handbook\data\images\sig_book_button.paa";
-			x = "-0.0786458 * safezoneW + safezoneX";
-			y = "0.015807 * safezoneH + safezoneY";
-			w = "0.469219 * safezoneW";
-			h = "0.979 * safezoneH";
+			x = "0.0103626 * safezoneW + safezoneX";
+			y = "0.016 * safezoneH + safezoneY";
+			w = "0.55664 * safezoneW";
+			h = "0.946 * safezoneH";
 			moving = 1;
+		};
+		
+		class loberg_51sb_soi_nextPage: loberg_hiddenbutton
+		{
+			idc = 1603;
+			x = "0.484538 * safezoneW + safezoneX";
+			y = "0.753 * safezoneH + safezoneY";
+			w = "0.0412326 * safezoneW";
+			h = "0.055 * safezoneH";
+			action = "call loberg_51sb_soi_fnc_nextpage;";
 		};
 	};
 };
@@ -68,10 +109,10 @@ class loberg_51sb_soi_page3to4
 		{
 			idc = 1200;
 			text = "\51SB_Handbook\data\images\sig_book2.paa";
-			x = "-0.0786458 * safezoneW + safezoneX";
-			y = "0.015807 * safezoneH + safezoneY";
-			w = "0.469219 * safezoneW";
-			h = "0.979 * safezoneH";
+			x = "0.0103626 * safezoneW + safezoneX";
+			y = "0.016 * safezoneH + safezoneY";
+			w = "0.55664 * safezoneW";
+			h = "0.946 * safezoneH";
 			moving = 1;
 		};
 	};
