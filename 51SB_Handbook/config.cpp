@@ -47,7 +47,7 @@ class loberg_51sb_soi_page1to2
 		class loberg_51sb_soi_background1to2: loberg_51sb_soi_picture
 		{
 			idc = 1200;
-			text = "\51SB_Handbook\data\images\sig_book.paa";
+			text = "\51SB_Handbook\data\images\sig_book_button.paa";
 			x = "-0.0786458 * safezoneW + safezoneX";
 			y = "0.015807 * safezoneH + safezoneY";
 			w = "0.469219 * safezoneW";
