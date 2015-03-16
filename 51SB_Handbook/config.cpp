@@ -5,7 +5,7 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {CBA_XEH, CBA_MAIN, A3_UI_F};
 		version = 2.3;
-		author[] = {"Loberg"};
+		author[] = {"Loberg","Wheeler"};
 		authorUrl = "URL";
 	};
 };
@@ -16,7 +16,7 @@ class Extended_PostInit_EventHandlers {
 	};
 };
 
-class loberg_51sb_soi_picture
+class ff_51sb_soi_picture
 {
 	access = 0;
 	type = 0;
@@ -36,7 +36,7 @@ class loberg_51sb_soi_picture
 	h = 0.15;
 };
 
-class loberg_hiddenbutton
+class ff_51sb_soi_hiddenbutton
 {
 	access = 0;
 	type = 1;
@@ -68,14 +68,14 @@ class loberg_hiddenbutton
 	borderSize = 0;
 };
 
-class loberg_51sb_soi_page1to2
+class ff_51sb_soi_page1to2
 {
 	idd = -1;
 	movingenable = "true";
 	onUnload = "hint """"";
 	class Controls
 	{
-		class loberg_51sb_soi_background1to2: loberg_51sb_soi_picture
+		class ff_51sb_soi_background1to2: ff_51sb_soi_picture
 		{
 			idc = 1200;
 			text = "\51SB_Handbook\data\images\sig_book_button.paa";
@@ -86,26 +86,26 @@ class loberg_51sb_soi_page1to2
 			moving = 1;
 		};
 		
-		class loberg_51sb_soi_nextPage: loberg_hiddenbutton
+		class ff_51sb_soi_nextPage: ff_51sb_soi_hiddenbutton
 		{
 			idc = 1603;
 			x = "0.484538 * safezoneW + safezoneX";
 			y = "0.753 * safezoneH + safezoneY";
 			w = "0.0412326 * safezoneW";
 			h = "0.055 * safezoneH";
-			action = "call loberg_51sb_soi_fnc_nextpage;";
+			action = "call ff_51sb_soi_fnc_nextpage;";
 		};
 	};
 };
 
-class loberg_51sb_soi_page3to4
+class ff_51sb_soi_page3to4
 {
 	idd = -1;
 	movingenable = "true";
 	onUnload = "hint """"";
 	class Controls
 	{
-		class loberg_51sb_soi_background3to4: loberg_51sb_soi_picture
+		class ff_51sb_soi_background3to4: ff_51sb_soi_picture
 		{
 			idc = 1200;
 			text = "\51SB_Handbook\data\images\sig_book2.paa";
@@ -132,6 +132,6 @@ class CfgWeapons
 		{
 			mass = 1;
 		};
-		author = "Loberg";
+		author = "Loberg/Wheeler";
 	};
 };
